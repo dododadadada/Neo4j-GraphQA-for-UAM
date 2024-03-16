@@ -4,6 +4,7 @@
 * 지식 그래프를 통해 교통 상황에 대한 인지, 상황 변화에 대한 시스템의 설명 가능성을 확보하고 LLM 환각현상을 방지함
 * Langchain을 활용하여 지식그래프를 지식기반으로 사용하는 LLM 시스템 구성
 
+\\
 
 배경
 -----
@@ -15,7 +16,7 @@ UAM은 도심 저고도 공역(고도 300m~600m)에서 고밀도로 운항될 �
 UAM 운행 스케줄 데이터 생성
 --------------------------
 
-지식그래프를 구축하기 위해 Time, UAM, Vertiport, Vertipad, Waypoint, Area 총 6개의 노드와 속성을 정의하고 이에 대한 CSV 데이터를 생성
+지식그래프를 구축하기 위해 Time, UAM, Vertiport, Vertipad, Waypoint, Area 총 6개의 노드와 속성을 정의하고 이에 대한 CSV 데이터를 생성하였다.
 
 
 | **UAM**                                   | **VERTIPORT**                                   | **VERTIPAD**                                    | **AREA**                          | **WAYPOINT** | **TIME** |
@@ -26,19 +27,19 @@ UAM 운행 스케줄 데이터 생성
 | vertipad_id: currently located vertipad   | time                                            | time                                            |                                   | time         |          |
 | time                                      |                                                 |                                                 |                                   |              |          |
 
-
+\\
 
 UAM 교통관제 온톨로지 모델링
 ---------------------------
 ![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/cf180e99-9b22-452b-8cdb-8bedfcdf804d)
 
-
+\\
 
 대화형 UAM 교통 관제 API 구축
 -----------------------------
 ![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/05f782b8-e56a-4956-b343-77543f26b344)
 
-
+\\
 
 실험 시나리오
 ---------------
