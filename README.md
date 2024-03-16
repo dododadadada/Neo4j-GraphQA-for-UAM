@@ -2,15 +2,14 @@
 ==============================================
 * 미래 UAM 산업에 대비하여 설명가능한 대화형 UAM (Urban Air Mobility) 교통 관제 시스템을 제안
 * 지식 그래프를 통해 교통 상황에 대한 인지, 상황 변화에 대한 시스템의 설명 가능성을 확보하고 LLM 환각현상을 방지함
-* Langchain을 활용하여 지식그래프를 지식기반으로 사용하는 LLM 시스템 구성
+* Langchain을 활용하여 지식그래프를 지식기반으로 사용하는 LLM 시스템 구성   
 
-\\
 
 배경
 -----
 UAM은 도심 저고도 공역(고도 300m~600m)에서 고밀도로 운항될 예정이기 때문에 다양한 외부 요소의 영향을 받는다. 그 중에서도 날씨, 비협력적 비행체와 조우와 같은 예측 불가한 변수에 의한 교통 상황의 변화는 UAM 운항 스케줄의 전면적인 재조정을 빈번하게 요구할 것으로 예상되기 때문에 기존 항공 운항관제 시스템과 차별화된 교통 관제 시스템이 요구된다. 
 
-따라서 지식그래프과 대화형 시스템을 결합하여 UAM 교통 관제의 효율성과 안전성을 향상시키는 것을 목적으로 할 뿐만 아니라, 제안한 설명가능한 인공지능 관제 시스템을 통해 UAM의 신뢰성을 높이고, 사용자와 사회에 긍정적인 영향을 미칠 것으로 기대하고 있으며, 최종적으로는 UAM 관제 시스템의 설계 및 운영에 있어 중요한 지침과 통찰을 제공하고자 한다.
+따라서 지식그래프과 대화형 시스템을 결합하여 UAM 교통 관제의 효율성과 안전성을 향상시키는 것을 목적으로 할 뿐만 아니라, 제안한 설명가능한 인공지능 관제 시스템을 통해 UAM의 신뢰성을 높이고, 사용자와 사회에 긍정적인 영향을 미칠 것으로 기대하고 있으며, 최종적으로는 UAM 관제 시스템의 설계 및 운영에 있어 중요한 지침과 통찰을 제공하고자 한다.   
 
 
 UAM 운행 스케줄 데이터 생성
@@ -25,21 +24,21 @@ UAM 운행 스케줄 데이터 생성
 | waypoint_id: currently located waypoint   | vertipad_id: vertipads located in the vertiport | vertiport_id: vertiport containing the vertipad | availability: flight availability | area_id      |          |
 | vertiport_id: currently located vertiport | area_id: area containing the vertiport          | uam_id: uam located in the vertipad             |                                   | uam_id       |          |
 | vertipad_id: currently located vertipad   | time                                            | time                                            |                                   | time         |          |
-| time                                      |                                                 |                                                 |                                   |              |          |
+| time                                      |                                                 |                                                 |                                   |              |          |    
 
-\\
+
 
 UAM 교통관제 온톨로지 모델링
 ---------------------------
-![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/cf180e99-9b22-452b-8cdb-8bedfcdf804d)
+![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/cf180e99-9b22-452b-8cdb-8bedfcdf804d)    
 
-\\
+
 
 대화형 UAM 교통 관제 API 구축
 -----------------------------
-![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/05f782b8-e56a-4956-b343-77543f26b344)
+![image](https://github.com/dododadadada/Neo4j-GraphQA-for-UAM/assets/98035735/05f782b8-e56a-4956-b343-77543f26b344)    
 
-\\
+
 
 실험 시나리오
 ---------------
